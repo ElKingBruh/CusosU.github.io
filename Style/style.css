@@ -1,0 +1,536 @@
+* {
+  text-decoration: none;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentBody{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0px auto;
+}
+
+/*Header*/
+
+.contentHead1{
+  width: 100%;
+}
+
+.cabecera {
+  background-color: rgb(189, 189, 189);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 1px 0.2px 15px rgb(167, 167, 167);
+}
+
+.linkHome{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: black;
+}
+
+.contentHead2 {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.logoSlogan {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 14%;
+}
+
+.logo {
+  margin: 0px 0.9375rem 0 0.3rem;
+
+  height: 80%;
+}
+
+.pLogo {
+  font-size: 100%;
+  width: 55%;
+}
+
+.navhead {
+  display: flex;
+  right: 6rem;
+  text-decoration: none;
+  font-size: 100%;
+  width: 25%;
+  height: 100%;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inicio {
+  position: relative;
+  font-size: 100%;
+  height: 77%;
+  top: 1rem;
+  padding: 0.3125rem 1.1875rem 0;
+  color: black;
+  transition: all 80ms;
+}
+
+.inicio:hover{
+  transform: translateY(-10%);
+  background-color: #727070;
+  border-top-right-radius: 0.9375rem;
+  border-top-left-radius: 0.9375rem;
+  top: 0.8rem;
+  color: #ffffff;
+}
+
+.cursos {
+  position: relative;
+  font-size: 100%;
+  height: 77%;
+  top: 1rem;
+  padding: 0.3125rem 1.1875rem 0;
+  color: black;
+  transition: all 80ms;
+}
+
+.cursos:hover{
+  transform: translateY(-10%);
+  background-color: #727070;
+  border-top-right-radius: 0.9375rem;
+  border-top-left-radius: 0.9375rem;
+  top: 0.8rem;
+  color: #ffffff;
+}
+
+.categoria {
+  position: relative;
+  font-size: 100%;
+  top: 1rem;
+  height: 77%;
+  padding: 0.3125rem 1.1875rem 0;
+  color: black;
+  transition: all 80ms;
+}
+
+.categoria:hover{
+  transform: translateY(-10%);
+  background-color: #727070;
+  border-top-right-radius: 0.9375rem;
+  border-top-left-radius: 0.9375rem;
+  top: 0.8rem;
+  color: #ffffff;
+}
+
+.genericContent1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 55%;
+}
+
+.searchBar {
+  display: flex;
+  height: 60%;
+}
+
+#busqueda {
+  display: flex;
+  border: 2px solid rgb(210, 210, 210);
+  width: 20rem;
+  background-color: #eaeaea;
+  padding: 0.25rem 0rem 0.25rem 0.89rem;
+  text-align: left;
+  font-size: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.boton {
+  border: none;
+  background-color: rgb(128, 220, 162);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0rem 0.75rem;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+#estudiante {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0rem;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1em;
+  height: 100%;
+}
+
+#perfilF {
+  margin: 0 0.5rem;
+}
+
+/*main*/
+
+main {
+  position: relative;
+  top: 12em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  flex-direction: column;
+}
+
+/*banner*/
+
+.banner {
+  display: flex;
+  background-color: rgb(217, 247, 228);
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 30vh;
+  position: relative;
+  left: 5%;
+  border-radius: 0.625rem;
+}
+
+#textBanner {
+  position: relative;
+  left: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 500%;
+}
+
+/*course card*/
+
+.sectionCourse {
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#pCourses {
+  position: relative;
+  left: 7.5%;
+  height: 2rem;
+  top: 3rem;
+  width: 50%;
+}
+
+.contentCourses {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  flex-wrap: wrap;
+  position: relative;
+  top: 2rem;
+  left: 7.7%;
+}
+
+.courseCard {
+  background-color: #eaeaea;
+  margin: 0.6rem;
+  width: 16.3rem;
+  position: relative;
+  top: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms;
+  box-shadow: 1px 1px 15px rgb(167, 167, 167);
+  overflow: hidden;
+}
+
+.courseCard:hover{
+  transform: translateY(-2%);
+}
+
+.info{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.imagenMin {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transition: all 300ms;
+}
+
+.imagenMin:hover {
+  transform: scale(105%);
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+h3 {
+  color: black;
+}
+
+.descCurso {
+  position: relative;
+  bottom: 0.25rem;
+}
+
+.horario {
+  position: relative;
+  padding: 1rem 3.2rem;
+  background-color: rgb(128, 220, 162);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/*catalogo*/
+
+.contenidoC{
+  display: flex;
+  margin: 0px auto;
+  position: relative;
+  top: 5rem;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categorias{
+  width: 60%;
+  border-right: 1px solid #bab8b8;
+}
+
+.individuo{
+  display: flex;
+  align-items: center;
+  background-color: rgb(128, 220, 162);
+  width: 90%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: 1px 3px 15px rgb(167, 167, 167);
+  margin: 3rem 0;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.individuo:hover {
+  transform: translateX(2%);
+}
+
+.iconCat{
+  margin-right: 3rem;
+  border-right: 1px solid;
+  padding: 1rem;
+  background-color: rgb(121, 199, 150);
+}
+
+.nameCat{
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+/*notificación*/
+
+.notificacion{
+  width: 30%;
+  padding-left: 5rem;
+}
+
+.notify{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(128, 220, 162);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  box-shadow: 1px 3px 15px rgb(167, 167, 167);
+}
+
+.fotoDesc{
+  display: flex;
+  align-items: center;
+}
+
+.imgPerfil{
+  margin-right: 1rem;
+  background-color: rgb(255, 255, 255);
+  height: 20%;
+  border-radius: 0.8rem;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.A{
+  padding: 3% 7%;
+  border: none;
+  background-color: rgb(69, 136, 2);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+}
+
+.A:hover {
+  transform: scale(110%);
+  box-shadow: 1px 3px 15px rgb(69, 136, 2);
+}
+
+.N{
+  padding: 3% 9%;
+  border: none;
+  background-color: rgb(223, 12, 12);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+}
+
+.N:hover {
+  transform: scale(110%);
+  box-shadow: 1px 3px 15px rgb(223, 12, 12);
+}
+
+/*footer*/
+
+.piesera{
+  position: relative;
+  bottom: -10rem;
+  background-color: rgb(59, 59, 59);
+  width: 100%;
+  height: 18vh;
+  margin-top: 0%;
+}
+
+
+
+.contFooter{
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  color: #eaeaea;
+}
+
+.integrantes{
+  list-style: none;
+}
+
+.uni{
+  color: #eaeaea;
+}
+
+@media screen and (max-width: 890px) {
+  .cabecera {
+    background-color: rgb(210, 210, 210);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    height: 7vh;
+    width: 100%;
+    z-index: 1;
+    flex-wrap: wrap;
+  }
+
+  .pLogo{
+    display: none !important;
+  }
+
+  .searchBar{
+    display: none !important;
+  }
+
+  .genericContent1{
+    width: 15%;
+  }
+
+  .studentName{
+    display: none;
+  }
+
+  nav{
+    font-size: 12px;
+  }
+
+  .banner{
+    position: relative;
+    top: 1;
+  }
+  #iconHome{
+    width: 20%;
+    margin: 10%;
+  }
+
+  #textBanner{
+    font-size: 300%;
+    position: relative;
+    left: -5%;
+  }
+
+  .categorias{
+  border-right: none;
+  border-bottom: 1px solid #bab8b8;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.individuo{
+  width: 100%;
+  border-top-left-radius: 1rem;
+}
+
+.notify{
+  width: 100%;
+  position: relative;
+  top: 1.8rem;
+}
+
+.notificacion{
+  width: 70%;
+  padding-left: 0rem;
+  margin: 0px auto;
+}
+
+  .piesera{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
